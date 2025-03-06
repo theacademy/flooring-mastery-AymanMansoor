@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.*;
 
 public class TaxDaoImpl implements TaxDao {
-    private final String TAX_FILE = "Data/Taxes.txt";
+    private final String TAX_FILE = "./SampleFileData/Data/Taxes.txt";
     private final Map<String, Tax> taxes = new HashMap<>();
 
     public TaxDaoImpl() {

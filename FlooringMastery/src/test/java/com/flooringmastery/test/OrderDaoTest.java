@@ -29,7 +29,7 @@ public class OrderDaoTest {
         order.setLaborCostPerSquareFoot(new BigDecimal("4.15"));
 
         orderDao.addOrder(order);
-        List<Order> orders = orderDao.getOrdersByDate("06012023");
+        List<Order> orders = orderDao.getOrdersByDate("06012013");
         assertFalse(orders.isEmpty());
         assertEquals(1, orders.get(0).getOrderNumber());
     }

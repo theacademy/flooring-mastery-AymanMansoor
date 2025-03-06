@@ -19,12 +19,18 @@ public class FlooringController {
         while (running) {
             int choice = view.printMenuAndGetSelection();
             switch (choice) {
-                case 1 -> displayOrders();
-                case 2 -> addOrder();
-                case 3 -> editOrder();
-                case 4 -> removeOrder();
-                case 5 -> running = false;
-                default -> view.displayMessage("Invalid selection. Try again.");
+                case 1 : displayOrders();
+                break;
+                case 2 : addOrder();
+                break;
+                case 3 : editOrder();
+                break;
+                case 4 : removeOrder();
+                break;
+                case 5 : running = false;
+                break;
+                default : view.displayMessage("Invalid selection. Try again.");
+
             }
         }
     }
