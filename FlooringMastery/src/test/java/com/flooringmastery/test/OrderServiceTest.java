@@ -1,7 +1,6 @@
 package com.flooringmastery.test;
 
-import com.flooringmastery.dao.OrderDao;
-import com.flooringmastery.dao.OrderDaoImpl;
+import com.flooringmastery.dao.*;
 import com.flooringmastery.model.Order;
 import com.flooringmastery.service.OrderService;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,11 +10,15 @@ import static org.junit.jupiter.api.Assertions.*;
 public class OrderServiceTest {
     private OrderService orderService;
     private OrderDao orderDao;
+    private TaxDao taxDao;
+    private ProductDao productDao;
 
     @BeforeEach
     void setUp() {
         orderDao = new OrderDaoImpl();
-        orderService = new OrderService(orderDao);
+        taxDao = new TaxDaoImpl();
+        productDao = new ProductDaoImpl();
+        orderService = new OrderService(orderDao, productDao,taxDao);
     }
 
     @Test

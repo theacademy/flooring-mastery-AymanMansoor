@@ -1,6 +1,8 @@
 package com.flooringmastery.dao;
 
 import com.flooringmastery.model.Product;
+import com.flooringmastery.model.Tax;
+
 import java.io.*;
 import java.math.BigDecimal;
 import java.util.*;
@@ -43,5 +45,10 @@ public class ProductDaoImpl implements ProductDao {
         } catch (FileNotFoundException e) {
             System.out.println("ERROR: Product file not found.");
         }
+
+    }
+    public Map<String, Product> getProductInfo(){
+
+        return products;
     }
 }

@@ -41,4 +41,8 @@ public class TaxDaoImpl implements TaxDao {
             System.out.println("ERROR: Tax file not found.");
         }
     }
+    public Map<String, Tax> getTaxInfo(){
+
+        return taxes;
+    }
 }
