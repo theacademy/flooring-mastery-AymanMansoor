@@ -1,0 +1,4 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+
+0,Ariana,TX,4.45,Carpet,342,2.25,2.10,null,null,null,null
+0,Sara,TX,4.45,Tile,231,3.50,4.15,808.50,958.65,78.64,1845.79

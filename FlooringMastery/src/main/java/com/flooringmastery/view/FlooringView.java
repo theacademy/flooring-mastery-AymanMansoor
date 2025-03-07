@@ -35,6 +35,7 @@ public class FlooringView {
     }
 
     public Order getNewOrderInfo() {
+
         String customerName = io.readString("Enter customer name: ");
         String state = io.readString("Enter state: ");
 
@@ -69,4 +70,6 @@ public class FlooringView {
     public int getOrderNumber() {
         return io.readInt("Enter order number: ");
     }
+
+
 }
